@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | MVG Charcutaria</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="scripts/includes.js" defer></script>
+</head>
+<body>
+    <!-- Header será inserido aqui automaticamente -->
+    <div id="header-placeholder"></div>
+
+    <!-- Conteúdo específico da página de contato -->
+    <main class="page-content">
+        <section class="contact-section">
+            <div class="container">
+                <h1>Fale Conosco</h1>
+                <div class="contact-grid">
+                    <!-- Informações de Contato -->
+                    <div class="contact-info">
+                        <h2><i class="fas fa-info-circle"></i> Informações</h2>
+                        <p><i class="fas fa-map-marker-alt"></i> Mendes - Rio de Janeiro</p>
+                        <p><i class="fas fa-phone"></i> (21) 97159-6776</p>
+                        <p><i class="fas fa-envelope"></i> contato@mvgcharcutaria.com.br</p>
+                        
+                        <h2><i class="fas fa-clock"></i> Horário de Atendimento</h2>
+                        <p>Segunda a Sexta: 9h às 18h</p>
+                        <p>Sábado: 9h às 13h</p>
+                    </div>
+
+                    <!-- Formulário de Contato -->
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="nome" name="nome" placeholder="Seu Nome Completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Seu Melhor E-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="telefone" name="telefone" placeholder="Seu Telefone">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">
+                                <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa de Localização -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Onde Estamos</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7373.336606453204!2d-43.707117999988505!3d-22.47909573398183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDI4JzQ1LjEiUyA0M8KwNDInMjUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1743956864404!5m2!1spt-BR!2sbr" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer será inserido aqui automaticamente -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script para o formulário -->
+    <script src="scripts/contact-form.js"></script>
+</body>
+</html>

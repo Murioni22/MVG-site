@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="/cadastrar" method="POST">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script>
+        // Validação simples no front
+        document.querySelector('form').addEventListener('submit', (e) => {
+            if (!e.target.email.value.includes('@')) {
+                e.preventDefault();
+                alert('E-mail inválido!');
+            }
+        });
+    </script>
+</body>
+</html>
